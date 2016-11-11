@@ -1,2 +1,13 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="app">
+  <h1>Hi {{ message }}</h1>
+  <input v-model="message">
+</div>
+
+<script type="text/javascript">
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Bryan'
+  }
+});
+</script>
